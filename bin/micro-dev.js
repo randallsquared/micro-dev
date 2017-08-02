@@ -16,11 +16,13 @@ const logError = require('../lib/error')
 const flags = mri(process.argv.slice(2), {
   default: {
     host: '::',
-    port: 3000
+    port: 3000,
+    nowatch: false
   },
   alias: {
     p: 'port',
     H: 'host',
+    n: 'nowatch',
     h: 'help',
     v: 'version'
   },
